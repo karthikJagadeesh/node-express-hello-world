@@ -1,0 +1,20 @@
+{
+  "name": "node-express-hello-world",
+  "version": "1.0.0",
+  "main": "server.js",
+  "repository": "https://github.com/karthikJagadeesh/node-express-hello-world.git",
+  "author": "Karthik Jagadeesha <kartu8@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "express": "^4.16.2"
+  },
+  "scripts": {
+    "start": "babel server.js --out-file compiled-server.js && nodemon compiled-server.js"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1"
+  }
+}
