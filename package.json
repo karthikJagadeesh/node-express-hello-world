@@ -10,7 +10,8 @@
     "express": "^4.16.2"
   },
   "scripts": {
-    "start": "babel server.js --out-file compiled-server.js && nodemon compiled-server.js"
+    "compile": "babel server.js --watch --out-file compiled-server.js",
+    "start": "nodemon compiled-server.js"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
